@@ -11,6 +11,7 @@
                 <tr class="bg-gray-100">
                     <th class="py-2 px-4 border-b">Titre</th>
                     <th class="py-2 px-4 border-b">Contenue</th>
+                    <th class="py-2 px-4 border-b">Catégorie</th>
                     <th class="py-2 px-4 border-b">Date de création</th>
                     <th class="py-2 px-4 border-b">Dernière modification</th>
                     <th class="py-2 px-4 border-b">Actions</th>
@@ -24,6 +25,9 @@
                         </td>
                         <td class="py-2 px-4 border-b">
                             {{ $article->content }}
+                        </td>
+                        <td class="py-2 px-4 border-b">
+                            {{ $article->category ? $article->category->title : 'Aucune catégorie' }}
                         </td>
                         <td class="py-2 px-4 border-b">
                             {{ $article->created_at->format('d/m/Y') }}

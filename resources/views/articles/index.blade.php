@@ -5,7 +5,6 @@
         <h1 class="text-2xl text-center font-bold mb-4">Liste des articles</h1>
 
         <a href="{{ route('articles.create') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Créer un article</a>
-
         <table class="min-w-full bg-white border border-gray-200 mt-4">
             <thead>
                 <tr class="bg-gray-100">
